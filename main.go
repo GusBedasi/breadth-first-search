@@ -23,7 +23,8 @@ func main() {
 			return
 		} else {
 			fmt.Printf("%s DO NOT finishes with IN\n", person)
-			queue = append(others, graph[person]...)
+			others = append(others, graph[person]...)
+			queue = others
 		}
 	}
 }
